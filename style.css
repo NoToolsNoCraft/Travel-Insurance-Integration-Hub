@@ -1,0 +1,33 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f5f7fa; color: #333; }
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+header { text-align: center; margin-bottom: 40px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 12px; }
+header h1 { font-size: 2.2em; margin-bottom: 10px; }
+header p { opacity: 0.9; font-size: 1.1em; }
+
+.quote-form { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 30px; }
+.quote-form h2 { margin-bottom: 20px; color: #444; }
+.quote-form input { display: block; width: 100%; padding: 12px; margin-bottom: 15px; border: 2px solid #e1e5e9; border-radius: 8px; font-size: 16px; }
+.quote-form button { background: #28a745; color: white; padding: 14px 30px; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; width: 100%; }
+.quote-form button:hover { background: #218838; }
+
+.results { background: #e8f5e8; padding: 30px; border-radius: 12px; margin-bottom: 30px; }
+.integration-flow { display: flex; gap: 10px; margin: 20px 0; }
+.step { flex: 1; padding: 15px; border-radius: 8px; text-align: center; font-weight: 500; }
+.internal { background: #007bff; color: white; }
+.rest { background: #17a2b8; color: white; }
+.soap { background: #ffc107; color: #212529; }
+.sftp { background: #6f42c1; color: white; }
+
+.quote-card { background: white; padding: 20px; margin: 10px 0; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); display: grid; grid-template-columns: 1fr auto 1fr; gap: 15px; align-items: center; }
+.quote-provider { font-weight: bold; font-size: 1.1em; }
+.quote-price { font-size: 1.5em; font-weight: bold; color: #28a745; }
+
+.dashboard { background: #f8f9fa; padding: 30px; border-radius: 12px; }
+#metricsChart { max-height: 300px; margin-bottom: 20px; }
+.metrics { display: flex; gap: 30px; font-size: 1.1em; font-weight: 500; }
+.metrics span { background: white; padding: 10px 20px; border-radius: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+
+.hidden { display: none; }
+@media (max-width: 768px) { .integration-flow { flex-direction: column; } .quote-card { grid-template-columns: 1fr; text-align: center; } }

@@ -1,0 +1,11 @@
+{
+  "policies": [
+    {
+      "id": "EU-STANDARD",
+      "name": "EU Travel Standard",
+      "baseRate": 25,
+      "coverage": "Medical, trip cancellation, baggage",
+      "regions": ["EU", "EEA"]
+    }
+  ]
+}

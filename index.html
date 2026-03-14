@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Insurance Integration Hub - Andersen SA Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛫 Travel Insurance Central Integration Layer</h1>
+            <p><em>Demo Multi-channel sales hub connecting internal policy engine with external partners via REST/SOAP/SFTP</em></p>
+        </header>
+
+        <!-- User Quote Form -->
+        <section class="quote-form">
+            <h2>Get Insurance Quote</h2>
+            <form id="quoteForm">
+                <input type="text" id="destination" placeholder="Destination (e.g., Paris)" required>
+                <input type="date" id="travelDate" required>
+                <input type="number" id="duration" placeholder="Duration (days)" min="1" required>
+                <button type="submit">Get Quotes via Central Gateway</button>
+            </form>
+        </section>
+
+        <!-- Integration Results -->
+        <section id="results" class="results hidden">
+            <h2>✅ Integration Successful</h2>
+            <div class="integration-flow">
+                <div class="step internal">Internal Policy Check</div>
+                <div class="step rest">Partner A (REST API)</div>
+                <div class="step soap">Partner B (SOAP XML)</div>
+                <div class="step sftp">Partner C (SFTP File)</div>
+            </div>
+            <div id="quotes"></div>
+        </section>
+
+        <!-- Admin Monitoring Dashboard -->
+        <section id="dashboard" class="dashboard hidden">
+            <h2>🖥️ Integration Monitoring (ELK-style)</h2>
+            <canvas id="metricsChart"></canvas>
+            <div class="metrics">
+                <span id="totalCalls">Total API Calls: 0</span>
+                <span id="errorRate">Error Rate: 0%</span>
+                <span id="avgLatency">Avg Latency: 0ms</span>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "partners": [
+    {
+      "id": "allianz-rest",
+      "name": "Allianz REST API",
+      "endpoint": "https://mock-api.allianz.com/quote",
+      "protocol": "REST/JSON"
+    },
+    {
+      "id": "axa-soap",
+      "name": "AXA SOAP Service", 
+      "endpoint": "https://mock-soap.axa.com/quote",
+      "protocol": "SOAP/XML"
+    },
+    {
+      "id": "generali-sftp",
+      "name": "Generali SFTP File",
+      "endpoint": "sftp://quotes.generali.com/inbound",
+      "protocol": "SFTP"
+    }
+  ]
+}

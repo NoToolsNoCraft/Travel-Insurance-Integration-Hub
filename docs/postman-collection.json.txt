@@ -1,0 +1,17 @@
+{
+  "info": { "name": "Travel Insurance Hub API Tests" },
+  "item": [
+    {
+      "name": "Internal Policy Check",
+      "request": { "method": "GET", "url": "{{baseUrl}}/api/internal" }
+    },
+    {
+      "name": "Allianz REST Quote", 
+      "request": { "method": "POST", "url": "{{baseUrl}}/api/rest-quote", "body": { "destination": "Paris" } }
+    },
+    {
+      "name": "AXA SOAP Quote",
+      "request": { "method": "POST", "url": "{{baseUrl}}/api/soap-quote", "header": [{ "key": "Content-Type", "value": "text/xml" }] }
+    }
+  ]
+}
